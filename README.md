@@ -15,7 +15,7 @@
         		<li>5/5(六) 18:00-21:00</li>
         	</ul>
         </li>
-        <li>內容 :
+        <li>目標 :
         	<ul class="task-list">
         		<li>資料結構(Data structure)</li>
         		<li>資料處理(Data processing)</li>
