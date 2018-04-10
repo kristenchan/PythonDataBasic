@@ -23,7 +23,7 @@
         		<li>資料視覺化(Data visualization)</li>
         	</ul>
         </li>
-        <li>規定 :
+        <li>注意事項 :
         	<ul class="task-list">
         		<li> 上課教室為電腦教室，因此課堂內不可飲食 </li>
         		<li> 可自行攜帶筆電，以方便學習 </li>
