@@ -4,7 +4,7 @@
 <a href="http://www.stat.tku.edu.tw/main.php"> TKU STAT </a>所開設的 Python 資料分析工作坊(初階) 
 <br>
 <p>
-	<h3><b><a href="https://kristenchan.github.io/Python_DataBasic/"> 課程網站 </b></h3>
+	<h3><b><a href="https://kristenchan.github.io/Python_DataBasic/"> 課程網站 </a></b></h3>
 	<h3><b>課程資訊</b></h3>
 	<ul class="task-list">
 		<li>地點 : TKU 台北校園 D304 教室 (台北市大安區金華街199巷5號)</li>
