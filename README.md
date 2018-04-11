@@ -37,7 +37,7 @@
 <p>
     <h3><b>課程講義</b></h3>
     <ul class="task-list">
-          <li><a href="">Ch. 0 Introduction</a></li>
+          <li>Ch. 0 Introduction</li>
     </ul>
 </p>
 
