@@ -45,7 +45,7 @@
 <p>
     <h3><b>點名、作業 記錄</b></h3>
     <a href="https://docs.google.com/spreadsheets/d/1bQGecyLFJca2bjneMdleXl27vUwtz0Mv_PBOY_gxXkE/edit?usp=sharing">
-        <img src="https://raw.githubusercontent.com/kristenchan/Python_DataBasic/master/py_databasic_plot/check.png" alt="Check">
+        <img src="https://raw.githubusercontent.com/kristenchan/Python_DataBasic/master/py_databasic_plot/check.png" alt="Check" width="50" height="50">
     </a>
 <br>
 </p>
