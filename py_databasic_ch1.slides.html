@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>py_databasic_ch1_1 slides</title>
+<title>py_databasic_ch1 slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -36,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -58,7 +58,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     <!-- End of mathjax configuration -->
 
 <!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -11776,7 +11776,6 @@ ul.typeahead-list > li > a {
 /* Overrides of notebook CSS for static HTML export */
 .reveal {
   font-size: 160%;
-  overflow-y: scroll;
 }
 .reveal pre {
   width: inherit;
@@ -11806,6 +11805,41 @@ ul.typeahead-list > li > a {
 }
 .reveal .progress {
   position: static;
+}
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #727272;
+}
+.reveal .controls .navigate-left.enabled:hover,
+.reveal .controls .navigate-left.enabled.enabled:hover {
+  border-right-color: #dfdfdf;
+}
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #727272;
+}
+.reveal .controls .navigate-right.enabled:hover,
+.reveal .controls .navigate-right.enabled.enabled:hover {
+  border-left-color: #dfdfdf;
+}
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #727272;
+}
+.reveal .controls .navigate-up.enabled:hover,
+.reveal .controls .navigate-up.enabled.enabled:hover {
+  border-bottom-color: #dfdfdf;
+}
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #727272;
+}
+.reveal .controls .navigate-down.enabled:hover,
+.reveal .controls .navigate-down.enabled.enabled:hover {
+  border-top-color: #dfdfdf;
+}
+.reveal .progress span {
+  background: #727272;
 }
 div.input_area {
   padding: 0.06em;
@@ -11840,6 +11874,19 @@ a.anchor-link {
 .rendered_html p {
   text-align: inherit;
 }
+::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar *
+{
+  background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #727272 !important;
+}
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -11854,8 +11901,7 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11864,8 +11910,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11884,8 +11929,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11893,8 +11937,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11907,8 +11950,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11934,8 +11976,7 @@ a         = 'Hello Python!'</code></pre>
 
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11945,8 +11986,7 @@ a         = 'Hello Python!'</code></pre>
 </div>
 </div>
 </aside></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11976,10 +12016,12 @@ a         = 'Hello Python!'</code></pre>
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a 物件的存放位置： 4341671408
+<pre>a 物件的存放位置： 4558719984
 </pre>
 </div>
 </div>
@@ -11989,8 +12031,7 @@ a         = 'Hello Python!'</code></pre>
 
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12000,8 +12041,7 @@ a         = 'Hello Python!'</code></pre>
 </div>
 </div>
 </aside></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12033,10 +12073,12 @@ a         = 'Hello Python!'</code></pre>
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
 
+
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>a 物件的存放位置： 4337309760
+<pre>a 物件的存放位置： 4510262672
 </pre>
 </div>
 </div>
@@ -12045,8 +12087,7 @@ a         = 'Hello Python!'</code></pre>
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12054,8 +12095,7 @@ a         = 'Hello Python!'</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12076,8 +12116,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12095,8 +12134,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12144,8 +12182,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12171,11 +12208,13 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-7-1ea8277c23c2&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-7-9eb304bfdbe9&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
 <span class="ansi-red-fg">    $variable = 1</span>
     ^
 <span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
@@ -12204,11 +12243,13 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-8-ae24453ae98c&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
+<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-8-e5103f12584c&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
 <span class="ansi-red-fg">    1variable = 1</span>
             ^
 <span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
@@ -12220,8 +12261,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12243,8 +12283,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12252,8 +12291,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12266,8 +12304,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12306,7 +12343,9 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>My Name :  Kristen
@@ -12318,8 +12357,7 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12360,7 +12398,9 @@ Letters (<font color='blue'>a - z, A - B</font>) , numbers (<font color='blue'>0
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Your Name :  Kristen
@@ -12374,8 +12414,7 @@ Her Name :  Kristen
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12416,7 +12455,9 @@ Her Name :  Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Age :  80
@@ -12430,8 +12471,7 @@ City :  Taipei
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12439,8 +12479,7 @@ City :  Taipei
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12493,7 +12532,9 @@ City :  Taipei
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Student 1 :  Vincent
@@ -12506,8 +12547,7 @@ Student 2 :  Benson
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12546,7 +12586,9 @@ Student 2 :  Benson
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Student 1 :  Benson
@@ -12559,8 +12601,7 @@ Student 2 :  Vincent
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12568,8 +12609,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12583,8 +12623,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12598,8 +12637,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12628,7 +12666,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[20]:</div>
+
 
 
 
@@ -12659,7 +12699,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[21]:</div>
+
 
 
 
@@ -12673,8 +12715,7 @@ Student 2 :  Vincent
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12683,8 +12724,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12713,7 +12753,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[22]:</div>
+
 
 
 
@@ -12727,8 +12769,7 @@ Student 2 :  Vincent
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12737,8 +12778,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12767,7 +12807,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[23]:</div>
+
 
 
 
@@ -12798,7 +12840,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[24]:</div>
+
 
 
 
@@ -12812,8 +12856,7 @@ Student 2 :  Vincent
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12822,8 +12865,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12852,7 +12894,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[25]:</div>
+
 
 
 
@@ -12883,13 +12927,15 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-26-83ab3fb73e0b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-26-6f4d8242c3d0&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>type<span class="ansi-blue-fg">(</span>true<span class="ansi-blue-fg">)</span>
 
 <span class="ansi-red-fg">NameError</span>: name &#39;true&#39; is not defined</pre>
@@ -12917,7 +12963,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[27]:</div>
+
 
 
 
@@ -12948,13 +12996,15 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-28-a2d9c628763d&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-28-5d8f55c25b5e&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>type<span class="ansi-blue-fg">(</span>false<span class="ansi-blue-fg">)</span>
 
 <span class="ansi-red-fg">NameError</span>: name &#39;false&#39; is not defined</pre>
@@ -12965,8 +13015,7 @@ Student 2 :  Vincent
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12974,8 +13023,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12990,8 +13038,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13009,8 +13056,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13041,7 +13087,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1 + 2 =  3
@@ -13058,8 +13106,7 @@ Student 2 :  Vincent
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13067,8 +13114,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13078,8 +13124,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13096,8 +13141,7 @@ Student 2 :  Vincent
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13141,7 +13185,9 @@ Student 2 :  Vincent
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>x &lt; 10 :  False
@@ -13158,8 +13204,7 @@ x != 10 :  False
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13176,8 +13221,7 @@ x != 10 :  False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13205,7 +13249,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>13
@@ -13236,7 +13282,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>7
@@ -13267,7 +13315,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>30
@@ -13279,8 +13329,7 @@ x != 10 :  False
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13308,7 +13357,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>3.3333333333333335
@@ -13339,7 +13390,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>1
@@ -13351,8 +13404,7 @@ x != 10 :  False
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13366,8 +13418,7 @@ x != 10 :  False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13396,7 +13447,9 @@ x != 10 :  False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>True and True : True
@@ -13411,8 +13464,7 @@ False and False : False
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13441,7 +13493,9 @@ False and False : False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>True or True : True
@@ -13456,8 +13510,7 @@ False or False : False
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13465,8 +13518,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13475,8 +13527,7 @@ False or False : False
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13490,8 +13541,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13500,8 +13550,7 @@ False or False : False
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13511,8 +13560,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13530,8 +13578,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13546,8 +13593,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13563,8 +13609,7 @@ False or False : False
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13605,7 +13650,9 @@ False or False : False
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_list 的 type :  &lt;class &#39;list&#39;&gt;
@@ -13619,8 +13666,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13633,8 +13679,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13659,7 +13704,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_list 取出第一到第二個元素 :  [&#39;Taipei&#39;]
@@ -13671,8 +13718,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13681,8 +13727,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13695,8 +13740,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13721,7 +13765,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_list 取出第一到第二個元素 :  [&#39;Taipei&#39;, 18.5]
@@ -13733,8 +13779,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13747,8 +13792,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13773,7 +13817,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[44]:</div>
+
 
 
 
@@ -13804,7 +13850,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[45]:</div>
+
 
 
 
@@ -13818,8 +13866,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13836,8 +13883,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13846,8 +13892,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13874,7 +13919,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;]
@@ -13904,7 +13951,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;, [&#39;Northeast&#39;, 4]]
@@ -13933,7 +13982,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_list 第五個元素的資料型態是 &lt;class &#39;list&#39;&gt;
@@ -13945,8 +13996,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13955,8 +14005,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13983,7 +14032,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;, [&#39;Northeast&#39;, 4], &#39;Kaohsiung&#39;, 25.9, &#39;sunny&#39;, &#39;69%&#39;]
@@ -14013,7 +14064,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;, [&#39;Northeast&#39;, 4], &#39;Kaohsiung&#39;, 25.9, &#39;sunny&#39;, &#39;69%&#39;, (&#39;Northwest&#39;, 3)]
@@ -14025,8 +14078,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14052,7 +14104,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;, [&#39;Northeast&#39;, 4], &#39;Kaohsiung&#39;, 25.9, &#39;sunny&#39;, &#39;69%&#39;, (&#39;Northwest&#39;, 3)]
@@ -14086,7 +14140,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Taipei&#39;, 18.5, &#39;rainy&#39;, &#39;80%&#39;, [&#39;Northeast&#39;, 4], &#39;Taichung&#39;, 21.5, &#39;cloudy&#39;, &#39;73%&#39;, [&#39;North&#39;], &#39;Kaohsiung&#39;, 25.9, &#39;sunny&#39;, &#39;69%&#39;, (&#39;Northwest&#39;, 3)]
@@ -14098,8 +14154,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14107,8 +14162,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14116,8 +14170,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14127,8 +14180,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14154,7 +14206,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>目前 weather_list 中第十個元素是 :  [&#39;North&#39;]
@@ -14166,8 +14220,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14175,8 +14228,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14197,8 +14249,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14214,8 +14265,7 @@ weather_list 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14256,7 +14306,9 @@ weather_list 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_tuple 的 type :  &lt;class &#39;tuple&#39;&gt;
@@ -14270,8 +14322,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14297,13 +14348,15 @@ weather_tuple 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-59-935cda1f4aac&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">&lt;ipython-input-59-a5f8e0bb3245&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>weather_tuple<span class="ansi-blue-fg">.</span>append<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;80%&#39;</span><span class="ansi-blue-fg">)</span> <span class="ansi-red-fg">#濕度</span>
 
 <span class="ansi-red-fg">AttributeError</span>: &#39;tuple&#39; object has no attribute &#39;append&#39;</pre>
@@ -14314,8 +14367,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14331,8 +14383,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14371,7 +14422,9 @@ weather_tuple 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[61]:</div>
+
 
 
 
@@ -14385,8 +14438,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14395,8 +14447,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14423,7 +14474,9 @@ weather_tuple 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[62]:</div>
+
 
 
 
@@ -14437,8 +14490,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14454,8 +14506,7 @@ weather_tuple 的第二個元素 :  18.5
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14495,7 +14546,9 @@ weather_tuple 的第二個元素 :  18.5
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_set 的 type :  &lt;class &#39;set&#39;&gt;
@@ -14508,8 +14561,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14522,8 +14574,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14540,8 +14591,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14581,7 +14631,9 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[66]:</div>
+
 
 
 
@@ -14595,8 +14647,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14605,8 +14656,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14634,7 +14684,9 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[67]:</div>
+
 
 
 
@@ -14648,8 +14700,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14658,8 +14709,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14687,7 +14737,9 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[68]:</div>
+
 
 
 
@@ -14701,8 +14753,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14711,8 +14762,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14728,8 +14778,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14737,8 +14786,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14760,8 +14808,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14778,8 +14825,7 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14819,7 +14865,9 @@ weather_set 自動排除重複值 :  {&#39;Taipei&#39;, 18.5, &#39;rainy&#39;}
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>weather_dict 的 type :  &lt;class &#39;dict&#39;&gt;
@@ -14832,8 +14880,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14842,8 +14889,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14882,7 +14928,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>{&#39;Taipei&#39;: [18.5, &#39;rainy&#39;, &#39;80%&#39;, &#39;Northeast&#39;, 4], &#39;Taichung&#39;: [21.5, &#39;cloudy&#39;, &#39;73%&#39;, &#39;North&#39;, 2]}
@@ -14894,8 +14942,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14904,8 +14951,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14931,7 +14977,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[75]:</div>
+
 
 
 
@@ -14945,8 +14993,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14955,8 +15002,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14964,8 +15010,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14981,8 +15026,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15008,7 +15052,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[76]:</div>
+
 
 
 
@@ -15039,7 +15085,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[77]:</div>
+
 
 
 
@@ -15053,8 +15101,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15080,7 +15127,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[78]:</div>
+
 
 
 
@@ -15111,7 +15160,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[79]:</div>
+
 
 
 
@@ -15125,8 +15176,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15152,7 +15202,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[80]:</div>
+
 
 
 
@@ -15183,7 +15235,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[81]:</div>
+
 
 
 
@@ -15214,7 +15268,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[82]:</div>
+
 
 
 
@@ -15245,7 +15301,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[83]:</div>
+
 
 
 
@@ -15276,7 +15334,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[84]:</div>
+
 
 
 
@@ -15290,8 +15350,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15317,7 +15376,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[85]:</div>
+
 
 
 
@@ -15348,7 +15409,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[86]:</div>
+
 
 
 
@@ -15379,7 +15442,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[87]:</div>
+
 
 
 
@@ -15393,8 +15458,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15420,7 +15484,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[88]:</div>
+
 
 
 
@@ -15451,7 +15517,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt output_prompt">Out[89]:</div>
+
 
 
 
@@ -15479,8 +15547,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15488,8 +15555,7 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15531,7 +15597,9 @@ weather_dict 的 Key不能重複保留後面的 :  {&#39;Taipei&#39;: &#39;rainy
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>my_string： Hello
@@ -15548,8 +15616,7 @@ my_string5： Hello Python !!
 
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15559,8 +15626,7 @@ my_string5： Hello Python !!
 </div>
 </div>
 </aside></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15587,7 +15653,9 @@ my_string5： Hello Python !!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>12
@@ -15600,8 +15668,7 @@ my_string5： Hello Python !!
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15610,8 +15677,7 @@ my_string5： Hello Python !!
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15651,7 +15717,9 @@ my_string5： Hello Python !!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hi
@@ -15664,8 +15732,7 @@ Hello
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15674,8 +15741,7 @@ Hello
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15710,7 +15776,9 @@ Hello
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>string_format1 :  Hello Kristen !!
@@ -15723,8 +15791,7 @@ string_format2 :  Hello Kristen !!
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15733,8 +15800,7 @@ string_format2 :  Hello Kristen !!
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15767,7 +15833,9 @@ string_format2 :  Hello Kristen !!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>string_format3 :  Hello, Kristen !!  You have 10000 error messages. Good luck, Kristen.
@@ -15779,8 +15847,7 @@ string_format2 :  Hello Kristen !!
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15789,8 +15856,7 @@ string_format2 :  Hello Kristen !!
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15826,7 +15892,9 @@ string_format2 :  Hello Kristen !!
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>--- Method 1 -----------------------------------------------------------
@@ -15843,8 +15911,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15876,7 +15943,9 @@ Hello, Kristen !!  You have 10000 error messages.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>圓周率:3.14
@@ -15888,8 +15957,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15915,7 +15983,9 @@ Hello, Kristen !!  You have 10000 error messages.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>圓周率:  3.14
@@ -15927,8 +15997,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15937,8 +16006,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15946,8 +16014,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15955,8 +16022,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15966,8 +16032,63 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="&#35036;&#20805;">&#35036;&#20805;<a class="anchor-link" href="#&#35036;&#20805;">&#182;</a></h1><hr>
+<h3 id="Note-:-Python-&#31243;&#24335;&#32080;&#27083;&#33287;&#35486;&#27861;"><div class="alert alert-block alert-warning">Note : Python &#31243;&#24335;&#32080;&#27083;&#33287;&#35486;&#27861;</div><a class="anchor-link" href="#Note-:-Python-&#31243;&#24335;&#32080;&#27083;&#33287;&#35486;&#27861;">&#182;</a></h3><h4 id="&#36339;&#33067;&#23383;&#20803;">&#36339;&#33067;&#23383;&#20803;<a class="anchor-link" href="#&#36339;&#33067;&#23383;&#20803;">&#182;</a></h4><ul>
+<li>單引號：<code>\'</code></li>
+<li>雙引號：<code>\"</code></li>
+<li>反斜線：<code>\\</code></li>
+<li>tab：<code>\t</code></li>
+<li>換行：<code>\n</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;單引號 :&quot;</span> <span class="p">,</span><span class="s2">&quot;Hello </span><span class="se">\&#39;</span><span class="s2">Python</span><span class="se">\&#39;</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;雙引號 :&quot;</span> <span class="p">,</span><span class="s2">&quot;Hello </span><span class="se">\&quot;</span><span class="s2">Python</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;反斜線 :&quot;</span> <span class="p">,</span><span class="s2">&quot;Hello </span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;tab :&quot;</span> <span class="p">,</span><span class="s2">&quot;Hello </span><span class="se">\t</span><span class="s2">Python&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;換行 :&quot;</span> <span class="p">,</span><span class="s2">&quot;Hello </span><span class="se">\n</span><span class="s2">Python&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>單引號 : Hello &#39;Python&#39;
+雙引號 : Hello &#34;Python&#34;
+反斜線 : Hello \Python\
+tab : Hello 	Python
+換行 : Hello 
+Python
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -15981,7 +16102,7 @@ Hello, Kristen !!  You have 10000 error messages.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Taipei&#39;</span>
@@ -15999,7 +16120,9 @@ Hello, Kristen !!  You have 10000 error messages.
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The 1st  element of my_string =  T
@@ -16014,8 +16137,7 @@ The last element of my_string =  i
 
 </div><aside class="notes">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16025,8 +16147,7 @@ The last element of my_string =  i
 </div>
 </div>
 </aside></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16043,7 +16164,7 @@ The last element of my_string =  i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello Python&quot;</span>
@@ -16060,7 +16181,9 @@ The last element of my_string =  i
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>my_string 的總長度 : 12
@@ -16075,7 +16198,7 @@ The last element of my_string =  i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Taipei&quot;</span><span class="p">,</span> <span class="s2">&quot;Kaohsiung&quot;</span><span class="p">,</span> <span class="s2">&quot;Taichung&quot;</span> <span class="p">,</span><span class="s2">&quot;Keelung&quot;</span><span class="p">,</span> <span class="s2">&quot;Taipei&quot;</span><span class="p">]</span>
@@ -16092,7 +16215,9 @@ The last element of my_string =  i
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>my_list 的總長度 : 5
@@ -16105,8 +16230,7 @@ The last element of my_string =  i
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16120,7 +16244,7 @@ The last element of my_string =  i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[103]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello Kristen&quot;</span>
@@ -16136,7 +16260,9 @@ The last element of my_string =  i
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;Hello&#39;, &#39;Kristen&#39;]
@@ -16150,7 +16276,7 @@ The last element of my_string =  i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -16166,7 +16292,9 @@ The last element of my_string =  i
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello
@@ -16179,8 +16307,7 @@ Kristen
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16189,8 +16316,7 @@ Kristen
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16204,7 +16330,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[105]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello Kristen !!&quot;</span>
@@ -16221,7 +16347,9 @@ Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hello Rick !!
@@ -16233,8 +16361,7 @@ Kristen
 </div>
 
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16245,7 +16372,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">article</span> <span class="o">=</span> <span class="s2">&quot;North Korea is seriously examining a plan to launch a missile strike targeting an area near the US territory of Guam in response to US President Donald Trump&#39;s warning to Pyongyang that any additional threats will be met with fire and fury, according to a new statement from Gen. Kim Rak Gyom published by state-run media KCNA Thursday.&quot;</span>
@@ -16258,7 +16385,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="n">article</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">))</span>
@@ -16273,7 +16400,9 @@ Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[&#39;North&#39;, &#39;Korea&#39;, &#39;is&#39;, &#39;seriously&#39;, &#39;examining&#39;, &#39;a&#39;, &#39;plan&#39;, &#39;to&#39;, &#39;launch&#39;, &#39;a&#39;, &#39;missile&#39;, &#39;strike&#39;, &#39;targeting&#39;, &#39;an&#39;, &#39;area&#39;, &#39;near&#39;, &#39;the&#39;, &#39;US&#39;, &#39;territory&#39;, &#39;of&#39;, &#39;Guam&#39;, &#39;in&#39;, &#39;response&#39;, &#39;to&#39;, &#39;US&#39;, &#39;President&#39;, &#39;Donald&#39;, &#34;Trump&#39;s&#34;, &#39;warning&#39;, &#39;to&#39;, &#39;Pyongyang&#39;, &#39;that&#39;, &#39;any&#39;, &#39;additional&#39;, &#39;threats&#39;, &#39;will&#39;, &#39;be&#39;, &#39;met&#39;, &#39;with&#39;, &#39;fire&#39;, &#39;and&#39;, &#39;fury,&#39;, &#39;according&#39;, &#39;to&#39;, &#39;a&#39;, &#39;new&#39;, &#39;statement&#39;, &#39;from&#39;, &#39;Gen.&#39;, &#39;Kim&#39;, &#39;Rak&#39;, &#39;Gyom&#39;, &#39;published&#39;, &#39;by&#39;, &#39;state-run&#39;, &#39;media&#39;, &#39;KCNA&#39;, &#39;Thursday.&#39;]
@@ -16287,7 +16416,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;文章中第二個字 : &quot;</span><span class="p">,</span><span class="n">article</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
@@ -16302,7 +16431,9 @@ Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>文章中第二個字 :  Korea
@@ -16314,8 +16445,7 @@ Kristen
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16323,8 +16453,7 @@ Kristen
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16335,7 +16464,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">article</span> <span class="o">=</span> <span class="s2">&quot;美國總統川普昨天警告北韓別再挑釁，否則將面臨「戰火與怒火」回擊。對此，白宮發言人桑德斯今天聲明，川普談話的語氣與力道，白宮國安會團隊及幕僚長凱利事先都知情。&quot;</span>
@@ -16348,7 +16477,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span> <span class="p">(</span><span class="n">article</span><span class="p">)</span>
@@ -16363,7 +16492,9 @@ Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>美國總統川普昨天警告北韓別再挑釁，否則將面臨「戰火與怒火」回擊。對此，白宮發言人桑德斯今天聲明，川普談話的語氣與力道，白宮國安會團隊及幕僚長凱利事先都知情。
@@ -16377,7 +16508,7 @@ Kristen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">article</span><span class="o">=</span><span class="n">article</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;北韓&quot;</span><span class="p">,</span><span class="s2">&quot;朝鮮民主主義人民共和國&quot;</span><span class="p">)</span>
@@ -16393,7 +16524,9 @@ Kristen
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>美國總統川普昨天警告朝鮮民主主義人民共和國別再挑釁，否則將面臨「戰火與怒火」回擊。對此，白宮發言人桑德斯今天聲明，川普談話的語氣與力道，白宮國安會團隊及幕僚長凱利事先都知情。
@@ -16429,8 +16562,7 @@ require(
             progress: true,
             history: true,
 
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+            transition: "slide",
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
@@ -16450,13 +16582,25 @@ require(
 
         Reveal.addEventListener('slidechanged', update);
 
-        var update_scroll = function(event){
-          $(".reveal").scrollTop(0);
-        };
+        function setScrollingSlide() {
+            var scroll = false
+            if (scroll === true) {
+              var h = $('.reveal').height() * 0.95;
+              $('section.present').find('section')
+                .filter(function() {
+                  return $(this).height() > h;
+                })
+                .css('height', 'calc(95vh)')
+                .css('overflow-y', 'scroll')
+                .css('margin-top', '20px');
+            }
+        }
 
-        Reveal.addEventListener('slidechanged', update_scroll);
+        // check and set the scrolling slide every time the slide change
+        Reveal.addEventListener('slidechanged', setScrollingSlide);
 
     }
+
 );
 </script>
 
