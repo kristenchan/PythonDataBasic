@@ -37,7 +37,9 @@
 <p>
     <h3><b>課程講義</b></h3>
     <ul class="task-list">
-          <li>Ch. 0 Introduction</li>
+          <li><a href="https://github.com/kristenchan/Python_DataBasic/blob/master/Info.pdf"> Info </a></li>
+          <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch0.slides.html"> Ch. 0 Introduction </a></li>
+          <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch1.slides.html"> Ch. 1 Basic </a></li>
     </ul>
 </p>
 <br>
