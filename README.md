@@ -40,6 +40,7 @@
           <li><a href="https://github.com/kristenchan/Python_DataBasic/blob/master/Info.pdf"> Info </a></li>
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch0.slides.html"> Ch. 0 Introduction </a></li>
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch1.slides.html"> Ch. 1 Basic </a></li>
+          <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch2.slides.html"> Ch. 2 Loop & Conditional judgment </a></li>
     </ul>
 </p>
 <br>
