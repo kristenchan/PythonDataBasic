@@ -42,6 +42,8 @@
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch1.slides.html"> Ch. 1 Basic </a></li>
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch2.slides.html"> Ch. 2 Loop & Conditional judgment </a></li>
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch3.slides.html"> Ch. 3 Function </a></li>
+          <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch4.slides.html"> Ch. 4 Module, Class, and Package </a></li>
+          <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch5.slides.html"> Ch. 5 Numpy I</a></li>
     </ul>
     <h3><b><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_additional.slides.html"> 補充練習題</a>a></b></h3>
 </p>
