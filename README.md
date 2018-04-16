@@ -50,9 +50,9 @@
 <br>
 <br>
 <p>
-    <h3><b>作業</b></h3>
+    <h3><b>作業</b></h3>
     <ul class="task-list">
-          <li><a href="https://github.com/kristenchan/Python_DataBasic/py_databasic_hw1.slides.html"> HW 1</a></li>
+	<li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_hw1.slides.html"> HW 1</a></li>
     </ul>
 </p>
 <br>
