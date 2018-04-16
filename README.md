@@ -45,7 +45,15 @@
           <li><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_ch4.slides.html"> Ch. 4 Module, Class, and Package </a></li>
           <li>Ch. 5 Numpy I</li>
     </ul>
-    <h3><b><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_additional.slides.html"> 補充練習題</a></b></h3>
+    <h3><b><a href="https://kristenchan.github.io/Python_DataBasic/py_databasic_additional.slides.html">補充練習題</a></b></h3>
+</p>
+<br>
+<br>
+<p>
+    <h3><b>作業</b></h3>
+    <ul class="task-list">
+          <li><a href="https://github.com/kristenchan/Python_DataBasic/py_databasic_hw1.slides.html"> HW 1</a></li>
+    </ul>
 </p>
 <br>
 <br>
@@ -56,17 +64,3 @@
     </a>
 <br>
 </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
