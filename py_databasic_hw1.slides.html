@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>py_databasic_hw1_notme slides</title>
+<title>py_databasic_hw1 slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -36,7 +36,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
 <!-- Loading the mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -58,7 +58,7 @@ if( window.location.search.match( /print-pdf/gi ) ) {
     <!-- End of mathjax configuration -->
 
 <!-- Get Font-awesome from cdn -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.css">
 
 <style type="text/css">
     /*!
@@ -11776,7 +11776,6 @@ ul.typeahead-list > li > a {
 /* Overrides of notebook CSS for static HTML export */
 .reveal {
   font-size: 160%;
-  overflow-y: scroll;
 }
 .reveal pre {
   width: inherit;
@@ -11806,6 +11805,41 @@ ul.typeahead-list > li > a {
 }
 .reveal .progress {
   position: static;
+}
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #727272;
+}
+.reveal .controls .navigate-left.enabled:hover,
+.reveal .controls .navigate-left.enabled.enabled:hover {
+  border-right-color: #dfdfdf;
+}
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #727272;
+}
+.reveal .controls .navigate-right.enabled:hover,
+.reveal .controls .navigate-right.enabled.enabled:hover {
+  border-left-color: #dfdfdf;
+}
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #727272;
+}
+.reveal .controls .navigate-up.enabled:hover,
+.reveal .controls .navigate-up.enabled.enabled:hover {
+  border-bottom-color: #dfdfdf;
+}
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #727272;
+}
+.reveal .controls .navigate-down.enabled:hover,
+.reveal .controls .navigate-down.enabled.enabled:hover {
+  border-top-color: #dfdfdf;
+}
+.reveal .progress span {
+  background: #727272;
 }
 div.input_area {
   padding: 0.06em;
@@ -11840,6 +11874,19 @@ a.anchor-link {
 .rendered_html p {
   text-align: inherit;
 }
+::-webkit-scrollbar
+{
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar *
+{
+  background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+  background: #727272 !important;
+}
 </style>
 
 <!-- Custom stylesheet, it must be in the same directory as the html file -->
@@ -11854,8 +11901,7 @@ a.anchor-link {
 <div class="reveal">
 <div class="slides">
 <section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11864,8 +11910,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11880,8 +11925,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11891,8 +11935,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11900,8 +11943,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11911,8 +11953,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11924,8 +11965,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11933,8 +11973,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11942,8 +11981,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11955,8 +11993,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11964,8 +12001,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11973,8 +12009,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11986,8 +12021,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12003,8 +12037,7 @@ a.anchor-link {
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12012,8 +12045,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12021,8 +12053,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12032,9 +12063,132 @@ Jackson</code></pre>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 1</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Emma&#39;</span><span class="p">,</span> <span class="s1">&#39;Eathon&#39;</span><span class="p">,</span> <span class="s1">&#39;Sophia&#39;</span><span class="p">,</span> <span class="s1">&#39;Mia&#39;</span><span class="p">,</span> <span class="s1">&#39;Aria&#39;</span><span class="p">,</span> <span class="s1">&#39;Jackson&#39;</span><span class="p">,</span> <span class="s1">&#39;Easton&#39;</span><span class="p">,</span> <span class="s1">&#39;Vivian&#39;</span><span class="p">,</span> <span class="s1">&#39;Chase&#39;</span><span class="p">,</span> <span class="s1">&#39;Jason&#39;</span><span class="p">]</span>
+<span class="n">height</span> <span class="o">=</span> <span class="p">[</span><span class="mi">157</span><span class="p">,</span> <span class="mi">164</span><span class="p">,</span> <span class="mi">158</span><span class="p">,</span> <span class="mi">169</span><span class="p">,</span> <span class="mi">178</span><span class="p">,</span> <span class="mi">159</span><span class="p">,</span> <span class="mi">169</span><span class="p">,</span> <span class="mi">171</span><span class="p">,</span> <span class="mi">165</span><span class="p">,</span> <span class="mi">168</span><span class="p">]</span>
+<span class="n">weight</span> <span class="o">=</span> <span class="p">[</span><span class="mi">52</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">74</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">63</span><span class="p">,</span> <span class="mi">66</span><span class="p">,</span> <span class="mi">59</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1.(1) &amp; 1.(2) &amp; 1.(3)</span>
+<span class="n">bmi_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fat_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">fat_name</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="p">,</span><span class="n">j</span> <span class="p">,</span><span class="n">k</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">weight</span><span class="p">,</span><span class="n">height</span><span class="p">,</span><span class="n">name</span><span class="p">):</span>
+        <span class="n">bmi</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">/</span> <span class="p">((</span><span class="n">j</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">bmi_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">bmi</span> <span class="p">)</span>
+        <span class="k">if</span> <span class="n">bmi</span> <span class="o">&lt;</span> <span class="mf">18.5</span><span class="p">:</span>
+            <span class="n">fat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s1">&#39;體重過低&#39;</span> <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mf">18.5</span> <span class="ow">and</span> <span class="n">bmi</span> <span class="o">&lt;=</span> <span class="mf">23.9</span> <span class="p">:</span>
+            <span class="n">fat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s1">&#39;體重正常&#39;</span> <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">bmi</span> <span class="o">&gt;=</span> <span class="mi">24</span> <span class="ow">and</span> <span class="n">bmi</span> <span class="o">&lt;=</span> <span class="mf">27.9</span> <span class="p">:</span>
+            <span class="n">fat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s1">&#39;超重&#39;</span> <span class="p">)</span>
+        <span class="k">else</span> <span class="p">:</span> 
+            <span class="n">fat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="s1">&#39;肥胖&#39;</span> <span class="p">)</span>
+            <span class="n">fat_name</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">k</span> <span class="p">)</span>
+            
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;BMI List : &quot;</span> <span class="p">,</span><span class="n">bmi_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------------------------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FAT List : &quot;</span> <span class="p">,</span><span class="n">fat_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-------------------------------------------------&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;FAT NAME : &quot;</span> <span class="p">,</span><span class="n">fat_name</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>BMI List :  [21.096190514828187, 21.936347412254616, 28.040378144528116, 21.007667798746546, 20.515086478979924, 29.270994027135, 14.00511186583103, 21.545090797168363, 24.242424242424246, 20.904195011337873]
+-------------------------------------------------
+FAT List :  [&#39;體重正常&#39;, &#39;體重正常&#39;, &#39;肥胖&#39;, &#39;體重正常&#39;, &#39;體重正常&#39;, &#39;肥胖&#39;, &#39;體重過低&#39;, &#39;體重正常&#39;, &#39;超重&#39;, &#39;體重正常&#39;]
+-------------------------------------------------
+FAT NAME :  [&#39;Sophia&#39;, &#39;Jackson&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 1</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1.(3)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="p">,</span><span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">fat_list</span><span class="p">,</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span><span class="s1">&#39;肥胖&#39;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">continue</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Sophia
+Jackson
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12042,8 +12196,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12051,8 +12204,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12064,8 +12216,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12078,8 +12229,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12087,8 +12237,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12096,8 +12245,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12106,8 +12254,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12117,8 +12264,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12126,8 +12272,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12147,8 +12292,96 @@ Jackson</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 2</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">news1</span> <span class="o">=</span> <span class="s2">&quot;Taipei - The Universiade-themed interior design featured in some Taipei Metro trains have attracted attention of foreign media. Fancy a swim or a game of basketball in the Taipei Metro ? The Singapore-based Strait Times asked in its report of the ad . Now you can - thanks to the help of some realistic 3D artwork that has transformed a six-car subway train into six different sporting venues , the newpaper report. There is a swimming pool , a football pitch , a baseball diamond , a basketball court, a running track and a field for throwing sports . The car with the swimming pool venue , which looks like a real water surface , has proven to be the most popular with commuters and tourists on social media , Strait Times said . Several commuters , decked out in swim gear , have also been spotted taking advantage of the Instagram-worthy photo opportunities , the paper continued . The artwork was also covered by the CNN , which interviewed the local water sports athlete Hsu Tzu-Hsiung who took photo of himself swimming in the metro car . Hsu told CNN : I waited until most of the passengers got off the train to take pictures . I think it&#39;s a fun campaign to raise awareness about sport in general among Taiwanese and get the public to get involved in the games .&quot;</span>
+<span class="n">news2</span> <span class="o">=</span> <span class="s2">&quot;International University Sports Federation ( FISU ) president Oleg Matytsin yesterday said the term Chinese Taipei has been used for Taiwan&#39;s Taipei Summer Universiade teams because the federation must conform to the International Olympic Committee&#39;s ( IOC ) Olympic Movement rules. Matytsin made the remark at a news conference in Taipei yesterday, a few hours before the Universiade opening ceremony. He said that delegations from 141 countries , including 7,746 athletes and 3,796 support staff , would be attending the Universiade this year . As of Friday , 119 delegations, including 5,477 athletes and 2,619 support staff , had arrived . The official Universiade media guide had used Chinese Taipei , but later changed it to Taiwan after legislators and the public expressed their discontent . Earlier this month, the Universiade Organizing Committee said that the term Chinese Taipei was changed by the federation during a content review , but the committee changed it back to Taiwan in the geographical introduction section of the guide, and informed the federation . Yesterday , Matytsin said the media guide was not corrected and the change to Taiwan was decided on to introduce the country and its outlying islands . The federation is an IOC-recognized organization , so it has to conform to the Olympic Movement rules and regulations , he said , adding that he knows many people are disappointed about using Chinese Taipei , but the rules must be followed . The flag and team logo must remain as Chinese Taipei . Respect the rules , Matytsin said . Today , I believe it&#39;s very important to educate people how to play according to the rules . Matytsin said Taipei has provided high-quality accommodation to athletes and support staff from around the world , and the passion and hospitality shown in Taipei are considered gold-medal standard . For the young athletes attending the Universiade it will be a positive experience and they will likely remember Taipei if they go on to become leaders in sports, business or politics , he said .&quot;</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 2</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.(1)</span>
+<span class="k">def</span> <span class="nf">check_news_wordcount</span><span class="p">(</span> <span class="n">news</span><span class="p">,</span> <span class="n">word</span> <span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; </span>
+<span class="sd">    第一個參數 news: 輸入一則文章</span>
+<span class="sd">    第二個參數 word: 輸入想計算次數的文字</span>
+<span class="sd">    回傳：word 在該篇文之的次數</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">news_split</span> <span class="o">=</span> <span class="n">news</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="n">word_count</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">news_split</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span><span class="o">==</span> <span class="n">word</span><span class="p">:</span>
+            <span class="n">word_count</span> <span class="o">+=</span> <span class="mi">1</span>  
+    <span class="k">return</span> <span class="n">word_count</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2.(2)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">check_news_wordcount</span><span class="p">(</span> <span class="n">news1</span><span class="p">,</span> <span class="s1">&#39;Taipei&#39;</span> <span class="p">)</span> <span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">check_news_wordcount</span><span class="p">(</span> <span class="n">news2</span><span class="p">,</span> <span class="s1">&#39;Taipei&#39;</span> <span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12156,8 +12389,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12167,8 +12399,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12204,8 +12435,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12213,8 +12443,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12222,8 +12451,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12235,8 +12463,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12248,8 +12475,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12257,8 +12483,7 @@ Jackson</code></pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12271,8 +12496,7 @@ $$</p>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12280,8 +12504,7 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12289,8 +12512,7 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12302,8 +12524,7 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12314,9 +12535,203 @@ $$</p>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 3</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Taipei</span> <span class="o">=</span> <span class="p">{</span>     <span class="s1">&#39;FEB&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">17.0</span><span class="p">,</span><span class="s1">&#39;2017/02/19&#39;</span><span class="p">,</span><span class="mf">27.9</span><span class="p">,</span><span class="s1">&#39;2017/02/10&#39;</span><span class="p">,</span><span class="mf">10.4</span><span class="p">]</span> <span class="p">,</span>
+               <span class="s1">&#39;JAN&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">8.3</span><span class="p">,</span><span class="s1">&#39;2017/01/04&#39;</span><span class="p">,</span><span class="mf">27.3</span><span class="p">,</span><span class="s1">&#39;2017/01/20&#39;</span><span class="p">,</span><span class="mf">12.2</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;DEC&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">20.1</span><span class="p">,</span><span class="s1">&#39;2016/12/21&#39;</span><span class="p">,</span><span class="mf">30.6</span><span class="p">,</span><span class="s1">&#39;2016/12/28&#39;</span><span class="p">,</span><span class="mf">12.6</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;NOV&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">22.6</span><span class="p">,</span><span class="s1">&#39;2016/11/13&#39;</span><span class="p">,</span><span class="mf">32.5</span><span class="p">,</span><span class="s1">&#39;2016/11/24&#39;</span><span class="p">,</span><span class="mf">17.6</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;OCT&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">27.0</span><span class="p">,</span><span class="s1">&#39;2016/10/02&#39;</span><span class="p">,</span><span class="mf">35.4</span><span class="p">,</span><span class="s1">&#39;2016/10/30&#39;</span><span class="p">,</span><span class="mf">21.4</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;SEP&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">27.8</span><span class="p">,</span><span class="s1">&#39;2016/09/16&#39;</span><span class="p">,</span><span class="mf">35.9</span><span class="p">,</span><span class="s1">&#39;2016/09/20&#39;</span><span class="p">,</span><span class="mf">23.6</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;AUG&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">30.1</span><span class="p">,</span><span class="s1">&#39;2016/08/04&#39;</span><span class="p">,</span><span class="mf">37.8</span><span class="p">,</span><span class="s1">&#39;2016/08/31&#39;</span><span class="p">,</span><span class="mf">24.6</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;JUL&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">30.3</span><span class="p">,</span><span class="s1">&#39;2016/07/28&#39;</span><span class="p">,</span><span class="mf">38.5</span><span class="p">,</span><span class="s1">&#39;2016/07/18&#39;</span><span class="p">,</span><span class="mf">23.9</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;JUN&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">29.4</span><span class="p">,</span><span class="s1">&#39;2016/06/01&#39;</span><span class="p">,</span><span class="mf">38.7</span><span class="p">,</span><span class="s1">&#39;2016/06/15&#39;</span><span class="p">,</span><span class="mf">24.1</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;MAY&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">27.1</span><span class="p">,</span><span class="s1">&#39;2016/05/31&#39;</span><span class="p">,</span><span class="mf">37.3</span><span class="p">,</span><span class="s1">&#39;2016/05/17&#39;</span><span class="p">,</span><span class="mf">19.0</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;APR&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">24.0</span><span class="p">,</span><span class="s1">&#39;2016/04/23&#39;</span><span class="p">,</span><span class="mf">32.2</span><span class="p">,</span><span class="s1">&#39;2016/04/18&#39;</span><span class="p">,</span><span class="mf">17.1</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;MAR&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">17.5</span><span class="p">,</span><span class="s1">&#39;2016/03/5&#39;</span><span class="p">,</span><span class="mf">29.4</span><span class="p">,</span><span class="s1">&#39;2016/03/28&#39;</span><span class="p">,</span><span class="mf">9.4</span><span class="p">]</span>                                                                                                        
+             <span class="p">}</span>  
+
+<span class="n">Kaohsiung</span> <span class="o">=</span> <span class="p">{</span>  <span class="s1">&#39;FEB&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">21.1</span><span class="p">,</span><span class="s1">&#39;2017/02/22&#39;</span><span class="p">,</span><span class="mf">29.8</span><span class="p">,</span><span class="s1">&#39;2017/02/10&#39;</span><span class="p">,</span><span class="mf">13.8</span><span class="p">]</span> <span class="p">,</span>
+               <span class="s1">&#39;JAN&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">21.7</span><span class="p">,</span><span class="s1">&#39;2017/01/08&#39;</span><span class="p">,</span><span class="mf">28.5</span><span class="p">,</span><span class="s1">&#39;2017/01/26&#39;</span><span class="p">,</span><span class="mf">14.7</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;DEC&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">22.9</span><span class="p">,</span><span class="s1">&#39;2016/12/05&#39;</span><span class="p">,</span><span class="mf">30.0</span><span class="p">,</span><span class="s1">&#39;2016/12/16&#39;</span><span class="p">,</span><span class="mf">16.2</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;NOV&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">25.7</span><span class="p">,</span><span class="s1">&#39;2016/11/19&#39;</span><span class="p">,</span><span class="mf">31.9</span><span class="p">,</span><span class="s1">&#39;2016/11/27&#39;</span><span class="p">,</span><span class="mf">19.7</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;OCT&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">28.4</span><span class="p">,</span><span class="s1">&#39;2016/10/21&#39;</span><span class="p">,</span><span class="mf">33.0</span><span class="p">,</span><span class="s1">&#39;2016/10/10&#39;</span><span class="p">,</span><span class="mf">24.0</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;SEP&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">28.4</span><span class="p">,</span><span class="s1">&#39;2016/09/12&#39;</span><span class="p">,</span><span class="mf">33.9</span><span class="p">,</span><span class="s1">&#39;2016/09/15&#39;</span><span class="p">,</span><span class="mf">23.4</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;AUG&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">29.4</span><span class="p">,</span><span class="s1">&#39;2016/08/02&#39;</span><span class="p">,</span><span class="mf">34.2</span><span class="p">,</span><span class="s1">&#39;2016/08/30&#39;</span><span class="p">,</span><span class="mf">24.8</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;JUL&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">30.2</span><span class="p">,</span><span class="s1">&#39;2016/07/04&#39;</span><span class="p">,</span><span class="mf">35.1</span><span class="p">,</span><span class="s1">&#39;2016/07/10&#39;</span><span class="p">,</span><span class="mf">25.4</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;JUN&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">29.7</span><span class="p">,</span><span class="s1">&#39;2016/06/27&#39;</span><span class="p">,</span><span class="mf">34.8</span><span class="p">,</span><span class="s1">&#39;2016/06/11&#39;</span><span class="p">,</span><span class="mf">24.6</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;MAY&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">28.9</span><span class="p">,</span><span class="s1">&#39;2016/05/27&#39;</span><span class="p">,</span><span class="mf">33.6</span><span class="p">,</span><span class="s1">&#39;2016/05/11&#39;</span><span class="p">,</span><span class="mf">24.8</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;APR&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">26.9</span><span class="p">,</span><span class="s1">&#39;2016/04/18&#39;</span><span class="p">,</span><span class="mf">33.0</span><span class="p">,</span><span class="s1">&#39;2016/04/19&#39;</span><span class="p">,</span><span class="mf">21.8</span><span class="p">]</span> <span class="p">,</span> 
+               <span class="s1">&#39;MAR&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">21.6</span><span class="p">,</span><span class="s1">&#39;2016/03/19&#39;</span><span class="p">,</span><span class="mf">29.7</span><span class="p">,</span><span class="s1">&#39;2016/03/26&#39;</span><span class="p">,</span><span class="mf">12.8</span><span class="p">]</span>                                                                                                        
+             <span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 3</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.(1)</span>
+<span class="n">Taipei_average</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">Kaohsiung_average</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">Taipei</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">Taipei_average</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>
+    
+<span class="k">for</span> <span class="p">(</span><span class="n">month</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="n">Kaohsiung</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">Kaohsiung_average</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">value</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">)</span>    
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Taipei 月均溫&#39;</span> <span class="p">,</span><span class="n">Taipei_average</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Kaohsiung 月均溫&#39;</span> <span class="p">,</span><span class="n">Kaohsiung_average</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Taipei 月均溫 [17.0, 8.3, 20.1, 22.6, 27.0, 27.8, 30.1, 30.3, 29.4, 27.1, 24.0, 17.5]
+Kaohsiung 月均溫 [21.1, 21.7, 22.9, 25.7, 28.4, 28.4, 29.4, 30.2, 29.7, 28.9, 26.9, 21.6]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 3</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.(2)</span>
+<span class="k">def</span> <span class="nf">my_std</span><span class="p">(</span> <span class="n">x</span> <span class="p">):</span>
+    <span class="s2">&quot;Standard deviation&quot;</span>
+    <span class="k">def</span> <span class="nf">my_sum</span><span class="p">(</span> <span class="n">x</span> <span class="p">):</span>
+        <span class="s2">&quot;Total&quot;</span>
+        <span class="n">temp_total</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="n">temp_total</span> <span class="o">=</span> <span class="n">temp_total</span><span class="o">+</span><span class="n">i</span>
+        <span class="k">return</span> <span class="n">temp_total</span>    
+    <span class="k">def</span> <span class="nf">my_count</span><span class="p">(</span> <span class="n">x</span> <span class="p">):</span>
+        <span class="s2">&quot;Count&quot;</span>
+        <span class="n">temp_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">:</span>
+            <span class="n">temp_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span><span class="p">(</span><span class="n">temp_count</span><span class="p">)</span>   
+    
+    <span class="n">temp_mean</span> <span class="o">=</span> <span class="n">my_sum</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span> <span class="o">/</span> <span class="n">my_count</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span>
+    
+    <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">+</span> <span class="p">(</span> <span class="n">i</span><span class="o">-</span><span class="n">temp_mean</span> <span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+    
+    <span class="n">temp_std</span> <span class="o">=</span> <span class="p">(</span> <span class="n">temp</span> <span class="o">/</span> <span class="n">my_count</span><span class="p">(</span> <span class="n">x</span> <span class="p">)</span> <span class="p">)</span> <span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">temp_std</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 3</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3.(3)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Taipei 月均溫的標準差 : &quot;</span><span class="p">,</span><span class="n">my_std</span><span class="p">(</span> <span class="n">Taipei_average</span> <span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Kaohsiung  月均溫的標準差 : &quot;</span><span class="p">,</span><span class="n">my_std</span><span class="p">(</span> <span class="n">Kaohsiung_average</span> <span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Taipei 月均溫的標準差 :  6.391183162938003
+Kaohsiung  月均溫的標準差 :  3.3477500736398396
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12324,8 +12739,7 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12333,8 +12747,7 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12342,12 +12755,48 @@ $$</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="py_databasic_plot/hw_1.png" alt="HW1" title="HW1"/></p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="alert alert-block alert-success"> <h1>(Answer) HW 1 : Question 4</h1> </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="n">num</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="bp">False</span>
+                <span class="k">break</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">error</span> <span class="o">=</span> <span class="s2">&quot;請輸入一個整數的數字&quot;</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s1">&#39;Error message: &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+</pre></div>
 
 </div>
 </div>
@@ -12376,8 +12825,7 @@ require(
             progress: true,
             history: true,
 
-            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
+            transition: "slide",
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
@@ -12397,13 +12845,25 @@ require(
 
         Reveal.addEventListener('slidechanged', update);
 
-        var update_scroll = function(event){
-          $(".reveal").scrollTop(0);
-        };
+        function setScrollingSlide() {
+            var scroll = false
+            if (scroll === true) {
+              var h = $('.reveal').height() * 0.95;
+              $('section.present').find('section')
+                .filter(function() {
+                  return $(this).height() > h;
+                })
+                .css('height', 'calc(95vh)')
+                .css('overflow-y', 'scroll')
+                .css('margin-top', '20px');
+            }
+        }
 
-        Reveal.addEventListener('slidechanged', update_scroll);
+        // check and set the scrolling slide every time the slide change
+        Reveal.addEventListener('slidechanged', setScrollingSlide);
 
     }
+
 );
 </script>
 
